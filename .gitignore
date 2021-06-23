@@ -1,2 +1,5 @@
 *.json
 *.pth
+*.jpg
+__pycache__/
+
