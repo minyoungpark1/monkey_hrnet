@@ -1,0 +1,11 @@
+*.json
+*.pth
+*.jpg
+__pycache__/
+output/
+log/
+hrnet/output/
+hrnet/log/
+hrnet/data/
+ipynb_checkpoints/
+
