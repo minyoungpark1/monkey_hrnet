@@ -2,4 +2,7 @@
 *.pth
 *.jpg
 __pycache__/
-
+output/
+log/
+hrnet/output/
+hrnet/log/
