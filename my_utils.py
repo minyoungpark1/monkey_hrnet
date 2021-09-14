@@ -118,7 +118,7 @@ def generate_downsampled_video(video_path, save_path, width):
     print((width, height))
     
     
-def infer_video(vidpath, model, joints_name, transform, downsample=8):
+def infer_video(vidpath, save_path, model, joints_name, transform, downsample=8):
     
     model.eval()
     
@@ -161,8 +161,8 @@ def infer_video(vidpath, model, joints_name, transform, downsample=8):
             
     cap.release()
     
-    csv_filename = vidpath.split('.')[0] + '_output.csv'
-    df.to_csv(csv_filename)
+    csv_filename = os.path.basename(vidpath).split('.')[0] + '_output.csv'
+    df.to_csv(os.path.join(save_path, csv_filename))
     
     
 def create_labeled_video(vidpath, csvpath, joints_name):
