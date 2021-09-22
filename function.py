@@ -275,7 +275,7 @@ def validate(config, val_loader, val_dataset, model, criterion, output_dir,
                 save_debug_images(config, input, meta, target, pred*8, output,
                                   prefix)
 
-    return loss.avg
+    return losses.avg
 
 
 # markdown format output
